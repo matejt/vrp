@@ -2,7 +2,13 @@ import aiohttp
 from config import conf as c
 
 class VRP(object):
-	pass 
+	def __init__(self, url):
+		self.url = url
+
+	def solve(self, orders):
+		# how do we want to process orders?
+
+
 
 
 
