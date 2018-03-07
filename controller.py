@@ -11,3 +11,8 @@ class VRP(object):
 	def check_status(self):
 		# how do we want to check status?
 
+	def pull_results(self, jobid):
+		# how do we want to pull results
+
+
+
