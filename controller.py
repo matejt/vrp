@@ -8,8 +8,6 @@ class VRP(object):
 	def solve(self, orders):
 		# how do we want to process orders?
 
-
-
-
-
+	def check_status(self):
+		# how do we want to check status?
 
