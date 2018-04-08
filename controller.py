@@ -12,11 +12,10 @@ class VRP(object):
 		self.depots = get_depots()
 		
 
-	def solve(self, orders):
+	async def submit(self, orders):
 		if orders:
-			# do something
-			pass
-			jobid = self.submit(orders)
+			# send http request, parse response, return jobid
+			jobid = aiohttp.request(self.url, orders)
 			return jobid
 
 	def check_status(self, jobid):
