@@ -15,7 +15,7 @@ class VRP(object):
 	async def submit(self, orders):
 		if orders:
 			# send http request, parse response, return jobid
-			jobid = aiohttp.request(self.url, orders)
+			jobid = await aiohttp.request(self.url, orders)
 			return jobid
 
 	def check_status(self, jobid):
