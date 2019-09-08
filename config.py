@@ -11,11 +11,11 @@ def detect_env():
 
 
 envs = {
-	'w': {},
-	'd': {},
-	's': {},
-	'c': {},
-	'p': {},
+	'w': {'name': 'local'},
+	'd': {'name': 'dev'},
+	's': {'name': 'sit'},
+	'c': {'name': 'cat'},
+	'p': {'name': 'prod'},
 }
 
 conf = envs.get(detect_env())
